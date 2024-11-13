@@ -18,6 +18,8 @@ Timeline and Explore:
 Feed of posts from followed users.
 Explore section to find trending posts and new connections.
 Animated UI: Smooth transitions, animated notifications, and interactive feedback on likes and comments for an immersive experience.
+
+
 🛠️ Tech Stack
 Frontend	Backend	Database	Real-Time
 HTML, CSS, JavaScript, Script.js	Node.js, Express.js	MongoDB	Socket.IO
@@ -26,29 +28,33 @@ Additional Packages
 dotenv: Environment variable management.
 bcryptjs: Password encryption.
 jsonwebtoken: Token-based authentication.
+
+
 📂 Project Structure
 graphql
 Copy code
 socialhub/
 ├── config/
-│   └── db.js               # MongoDB connection setup
+│   └── db.js               
 ├── controllers/
-│   ├── authController.js   # Handles authentication logic
-│   ├── postController.js   # Manages post creation and interactions
-│   └── userController.js   # Manages user profiles, follow/unfollow logic
+│   ├── authController.js   
+│   ├── postController.js   
+│   └── userController.js   
 ├── models/
-│   ├── User.js             # User schema and model
-│   ├── Post.js             # Post schema and model
-│   └── Comment.js          # Comment schema and model
+│   ├── User.js             
+│   ├── Post.js             
+│   └── Comment.js          
 ├── routes/
-│   ├── authRoutes.js       # Authentication routes
-│   ├── postRoutes.js       # Post routes
-│   └── userRoutes.js       # User routes
+│   ├── authRoutes.js       
+│   ├── postRoutes.js       
+│   └── userRoutes.js       
 ├── public/
-│   ├── index.html          # Frontend home/feed page
-│   ├── profile.html        # Profile page
-│   └── styles.css          # CSS styles and animations
-└── server.js               # Main server file
+│   ├── index.html          
+│   ├── profile.html        
+│   └── styles.css          
+└── server.js               
+
+
 🏗️ Installation and Setup
 Prerequisites
 Node.js and npm installed
@@ -58,7 +64,7 @@ Clone the Repository
 
 bash
 Copy code
-git clone https://github.com/your-username/socialhub.git
+git clone https://github.com/vijayleo31/socialhub.git
 cd socialhub
 Install Dependencies
 
@@ -94,6 +100,8 @@ POST /api/posts/create: Create a new post.
 GET /api/posts/: Get all posts for the feed.
 PUT /api/posts/like/:id: Like a post.
 POST /api/posts/comment/:id: Comment on a post.
+
+
 🎥 Interactive UI Elements
 Our platform is designed with a focus on interactivity and visual feedback:
 
@@ -101,16 +109,20 @@ Post Loading Animations: Posts appear with a fade-in effect to keep the user eng
 Like Button Animation: Heart button bounces upon liking.
 Profile and Post Hover Effects: Smooth transitions and interactive feedback on hovering.
 Real-Time Notifications: Using Socket.IO for real-time notifications of likes, follows, and comments.
+
 ✨ Key Challenges and Solutions
 Real-Time Notifications: Implemented using Socket.IO for live updates without refreshing the page.
 Scalable Data Management: MongoDB was chosen for its flexibility with user-generated content, such as posts and comments.
 Security: User passwords are hashed with bcryptjs and JWT is used to manage secure sessions.
+
 🌍 Future Enhancements
 Direct Messaging: Allow users to chat in real-time.
 Post Analytics: Insights into post engagement and reach.
 Improved Search and Discoverability: Enhanced algorithms for hashtags and user recommendations.
 Story Feature: Add short, temporary posts similar to stories on Instagram.
 Media Sharing Enhancements: Support for video uploads and playback.
+
+
 🤝 Contributing
 We welcome contributions! Please follow these steps:
 
@@ -119,5 +131,6 @@ Create a new branch (git checkout -b feature/your-feature-name).
 Commit your changes (git commit -m "Add a new feature").
 Push to the branch (git push origin feature/your-feature-name).
 Create a Pull Request.
+
 📜 License
 This project is licensed under the MIT License.
